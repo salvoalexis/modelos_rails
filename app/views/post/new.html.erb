@@ -1,0 +1,14 @@
+<%= form_with model: @post, method: :post do |form|%>
+    <div>
+        <%= form.label :title, "Titulo del Post", class:"form-label"%>
+        <%= form.text_field :title, class:"form-label"%>
+    </div>
+
+    <div>
+        <%= form.label :content, "Contenido del Post", class:"form-label"%>
+        <%= form.text_field :content, class:"form-label"%>
+    </div>
+    <div>
+    <%= form.submit class: "btn btn-primary" %>
+    </div>
+<%end%>
